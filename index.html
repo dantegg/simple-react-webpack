@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <link rel="stylesheet" href="./css/ddfullscreenslider.css">
 </head>
 <body>
-<div id="root"></div>
-<script src="./static/bundle.js"></script>
+<section id="dowebok" class="dd_fullscreenslider">
+    <div class="slidewrapper">
+        <article class="slide">
+            <div id="root" style="height:100%"></div>
+        </article>
+        <article class="slide">第二屏</article>
+        <article class="slide">第三屏</article>
+        <article class="slide">第四屏</article>
+        <article class="slide">第五屏</article>
+    </div>
+</section>
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/jquery.mousewheel.min.js"></script>
+<script src="./js/ddfullscreenslider.js"></script>
+<script>
+    var fss;
+    $(function() {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok'
+        });
+    });
+</script>
+<script src="/static/bundle.js"></script>
 </body>
 </html>

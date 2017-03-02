@@ -3,7 +3,10 @@
  */
 import React from 'react'
 import {render} from 'react-dom'
+import Test from './test'
 
 render(
-    <div>test webpack!!</div>,document.getElementById('root')
+    <div style={{height:'100%'}}>
+        <Test/>
+    </div>,document.getElementById('root')
 )

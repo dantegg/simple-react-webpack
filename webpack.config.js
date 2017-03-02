@@ -12,10 +12,10 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/static/'
     },
-    externals:{
-        'react':'React',
-        'react-dom':'reactDom'
-    },
+    // externals:{
+    //     'react':'React',
+    //     'react-dom':'reactDom'
+    // },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.ProvidePlugin({
